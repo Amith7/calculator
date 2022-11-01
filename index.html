@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <center><h2>Calculator</h2></center>
+    <div class="main-body ">
+        <div class="calc">
+            <div class="output">
+                <input type="text" class="screen" id="result">
+            </div>
+            <div class="pannel">
+                <div class="toprow">
+                    <div class="flex">
+                        <button class="buttonclass" id="shift">Shift</button>
+                    </div>
+                    <div class="flex">
+                        <button class="alphaclr" id="Alpha">AlphA</button>
+
+                    </div>
+                    <div class="flex">
+                        <button class="buttoncenter">reply</button>
+                    </div>
+                    <div class="flex">
+                        <button class="alphaclr" id="ON">clr</button>
+
+                    </div>
+                    <div class="flex">
+                        <button class="buttonclass" id="ON">ON</button>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="ctn">
+                        <div class="cflex"><button class="cbtn"></button></div>
+                        <div class="cflex"><button class="cbtn"></button></div>
+                        <div class="cflex"><button class="cbtn" style="margin-left: 155px;"></button></div>
+                        <div class="cflex"><button class="cbtn"></button></div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button class="btn" onclick="displayNum(7)">7</button>
+                    <button class="btn"   onclick="displayNum(8)">8</button>
+                    <button class="btn" onclick="displayNum(9)">9</button>
+                    <button class="btn" onclick="removeList()" id="del">DEL</button>
+                    <button class="btn" onclick="clearBox()" id="ac">AC</button>
+
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="displayNum(4)">4</button>
+                    <button class="btn"onclick="displayNum(5)">5</button>
+                    <button class="btn"onclick="displayNum(6)">6</button>
+                    <button class="btn"onclick="displayNum('*')" id="mul">*</button>
+                    <button class="btn"onclick="displayNum('/')" id="slash">/</button>
+
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="displayNum(1)">1</button>
+                    <button class="btn"onclick="displayNum(2)">2</button>
+                    <button class="btn"onclick="displayNum(3)">3</button>
+                    <button class="btn"onclick="displayNum('+')" id="plus">+</button>
+                    <button class="btn" onclick="displayNum('-')"id="minus">-</button>
+
+                </div>
+                <div class="row">
+                    <button class="btn"onclick="displayNum(0)">0</button>
+                    <button class="btn" onclick="displayNum('.')">.</button>
+                    <button class="btn">EXP</button>
+                    <button class="btn " id="ans">ANS</button>
+                    <button class="btn" onclick="evaluateExpressions()" id="equal">=</button>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
